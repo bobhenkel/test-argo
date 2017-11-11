@@ -22,4 +22,4 @@ type: container
 version: 1
 name: hello-go
 description: Hello Go!
-image: docker pull jeffdecola/hello-go
+image: jeffdecola/hello-go
