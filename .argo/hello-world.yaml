@@ -1,11 +1,11 @@
 ---
 type: project
 version: 1
-name: Hello World!
-description: Hello World!
+name: Hello Go!
+description: Hello Go!
 actions:
   run:
-    template: hello-world
+    template: hello-go
 categories: ["demo"]
 publish:
   branches:
@@ -20,6 +20,6 @@ assets:
 ---
 type: container
 version: 1
-name: hello-world
-description: Hello World!
-image: hello-world
+name: hello-go
+description: Hello Go!
+image: docker pull jeffdecola/hello-go
