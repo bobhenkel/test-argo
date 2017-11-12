@@ -5,7 +5,7 @@ name: Hello Go!
 description: Hello Go!
 actions:
   run:
-    template: hello-go
+    template: hello-world
 categories: ["demo"]
 publish:
   branches:
