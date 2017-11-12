@@ -9,17 +9,8 @@ inputs:
     REPO:
       default: "%%session.repo%%"
 steps:
-- CHECKOUT:
-    resources:
-      mem_mib: 500
-      cpu_cores: 0.1
-    image: argoproj/argoscm:v2.0
-    command: ["axscm"]
-    args: ["clone", "%%inputs.parameters.REPO%%", "/src", "--commit", "%%inputs.parameters.COMMIT%%"]
-    outputs:
-      artifacts:
-        CODE:
-          path: /src
+- checkout:
+    template: git-checkout   
 - BUILD:
     image: "docker:1.12"
     resources:
