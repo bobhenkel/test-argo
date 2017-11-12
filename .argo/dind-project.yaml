@@ -5,7 +5,7 @@ name: Docker in Docker
 description: Build a docker image using Docker in Docker
 actions:
   build using dind:
-    template: bob-example-build-using-dind
+    template: dind-workflow
 categories: ["demo", "promoted"]
 publish:
   branches:
