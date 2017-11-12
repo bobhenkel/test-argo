@@ -20,6 +20,6 @@ assets:
 ---
 type: container
 version: 1
-name: hello-go
-description: Hello Go!
+name: hello-world
+description: Hello Go I hope!
 image: jeffdecola/hello-go
