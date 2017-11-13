@@ -11,7 +11,7 @@ inputs:
 steps:
 - checkout:
     template: git-checkout
-  build:
+- build:
     template: dind-test-container
     
 ---
