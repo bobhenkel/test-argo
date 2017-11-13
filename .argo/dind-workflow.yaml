@@ -20,7 +20,7 @@ version: 1
 name: dind-test-container
 description: dind testing
 image: docker:latest
-command: ["sh", "-c", "sleep 600"]
+command: ["sh", "-c", "docker build -f Dockerfile ."]
 resources:
   mem_mib: 300
   cpu_cores: 0.1
